@@ -1,0 +1,22 @@
+#!/usr/bin/perl
+
+print "Content-type: text/html\n\n";
+print "<html><h1>Hello!</h1></html>\n";
+
+
+@array = ("red","blue","orange","white");
+print "@array\n";
+#quick way
+@array = qw (red blue orange white);
+print "@array\n";
+
+@numbers = (1,2,3,4,5);
+print "@numbers\n";
+#quick way
+@numbers = (1..5);
+print "@numbers\n";
+
+@array = (1) x 100;
+print "@array\n";
+@array = ("helo") x 100;
+print "@array\n";
