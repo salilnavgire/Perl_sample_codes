@@ -1,0 +1,57 @@
+#!/usr/bin/perl
+
+print "Content-type: text/html\n\n";
+print "<html><h1>Hello!</h1></html>\n";
+
+#while and until loop
+
+$count = 1;
+while ($count <= 10) {
+print "$count hello\n";
+
+$count++;
+}
+
+
+#dude most important thing is when using a variable always put a $ sign before it
+@array = qw(frog dog sheep monkey cat bird elephant);
+$count = 0;
+while ($count<7) {
+print "$array[$count]\n";
+$count++;
+
+}
+
+#remember remember the 1st september!!!
+#lol
+# '#' is used for the count or length but still remember $
+$count = 0;
+while ($count<$#array+1) {
+print "$array[$count]\n";
+$count++;
+
+}
+
+#until is ulta of while.... executes util the condition if false
+@array = qw(frog dog sheep monkey cat bird elephant);
+$count = 0;
+until (($array[$count]) eq "bird") {
+print "$array[$count]\n";
+$count++;
+
+}
+#to print all
+@array = qw(frog dog sheep monkey cat bird elephant);
+$count = 0;
+until (($array[$count]) eq "") {
+print "$array[$count]\n";
+$count++;
+
+}
+
+
+
+
+
+
+
