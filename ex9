@@ -1,0 +1,64 @@
+#!/usr/bin/perl
+
+print "Content-type: text/html\n\n";
+print "<html><h1>Hello!</h1></html>\n";
+
+#operators and precedents continued ....
+
+#** raised to
+$sum = 2 ** 3;
+print "$sum\n";
+
+$sum = 2 ** -3;
+print "$sum\n";
+
+$sum = 2 ** 4;
+print "$sum\n";
+
+#% is modulus which is the remainder after dividing
+$sum = 10 % 3;
+print "$sum\n";
+
+$sum = 10/3;
+print "$sum\n";
+
+$sum = int(10/3);
+print "$sum\n";
+
+use integer;
+#all are integer after this
+$sum = 10/3;
+print "$sum\n";
+
+$number = 10;
+if ($number == 10) {
+print "10\n";
+}
+
+$number = 10;
+if ($number != 20) {
+print "not 20\n";
+}
+
+#important equality in strings it is 'eq'
+$word = "hello";
+if ($word eq "hello") {
+print "yeah\n";
+}
+
+$word = "hello";
+if ($word ne "mello") {
+print "no mello only hello\n";
+}
+
+
+
+
+
+
+
+
+
+
+
+
