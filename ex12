@@ -1,0 +1,49 @@
+#!/usr/bin/perl
+
+print "Content-type: text/html\n\n";
+print "<html><h1>Hello!</h1></html>\n";
+
+#hashes
+%hash = ();
+
+$hash{name} = john;
+$hash{age} = 25;
+$hash{city} = london;
+
+#stores them randomly as we are not indexing
+print "@{[%hash]}\n";
+print "$hash{city}\n";
+
+$hash{city} = 'New York';
+print "$hash{city}\n";
+
+$hash{'Last name'} = kuchbhi;
+print "$hash{'Last name'}\n";
+
+#other methods of populating hash without explicitly stating
+%hash = (
+     'name','jonh',
+     'age','34',
+     'city','london',
+);
+
+print "@{[%hash]}\n";
+print "$hash{city}\n";
+
+#another way
+%hash = (
+age,23,
+name,sal,
+job,nothing,
+workload,'not heavy',
+);
+print "@{[%hash]}\n";
+print "$hash{job}\n";
+
+
+
+
+
+
+
+
