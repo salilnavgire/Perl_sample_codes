@@ -1,0 +1,32 @@
+#!/usr/bin/perl
+
+print "Content-type: text/html\n\n";
+print "<html><h1>Hello!</h1></html>\n";
+
+#Hashes keys and values
+
+%hash = qw (
+      food sandwich
+      desert donout
+      drink coke
+);
+
+
+print "@{[%hash]}\n";
+
+while (($key,$value) = each (%hash)) {
+print "$key - $value \n";
+
+};
+
+foreach $key (keys %hash) {
+print "$key\n";
+};
+
+foreach $value (values %hash) {
+print "$value\n";
+};
+
+#printing has no order at all
+
+
