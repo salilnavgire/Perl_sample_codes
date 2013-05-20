@@ -1,0 +1,29 @@
+#!/usr/bin/perl
+
+print "Content-type: text/html\n\n";
+print "<html><h1>Hello!</h1></html>\n";
+
+#time module
+
+$time = localtime(time);
+print "$time\n";
+
+$time = gmtime(time);
+print "$time\n";
+
+#just a bunch of numbers
+$time = time;
+print "$time\n";
+
+($sec,$min,$hour,$mday,$mon,$year,$wday,$yday,$isdst) = localtime(time);
+print "$sec,$min,$hour,$mday,$mon,$year,$wday,$yday,$isdst\n";
+
+@months = (1..12);
+@days = qw(Sun Mon Tue Wed Thu Fri Sat);
+
+$year = $year + 1900;
+
+#incomplete
+
+
+
