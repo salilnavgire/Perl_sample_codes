@@ -1,0 +1,29 @@
+#!/usr/bin/perl
+
+print "Content-type: text/html\n\n";
+print "<html><h1>Hello!</h1></html>\n";
+
+@array = (1,2,3,4,5,6);
+print "@array\n";
+print "$array[2]\n";
+
+@words = ("one","two","three");
+print "@words\n";
+print "$words[1]\n";
+
+$words[3] = "four";
+print "@words\n";
+print "$words[3]\n";
+
+$total = $#words + 1;
+print "$total\n";
+
+$#words = 1;
+print "@words\n";
+
+@words = ();
+print "hahaha @words\n";
+
+
+
+
