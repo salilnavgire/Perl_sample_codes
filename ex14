@@ -1,0 +1,38 @@
+#!/usr/bin/perl
+
+print "Content-type: text/html\n\n";
+print "<html><h1>Hello!</h1></html>\n";
+
+#hash functions exists defined and delete
+
+%hash = qw(
+      bird albestos
+      fish shark
+      kide makdee
+      animal
+
+);
+
+#see if the key exists
+if (exists($hash{animal})) {
+print "the key exists\n";
+}
+else {
+print "the key does not exsists \n";
+}
+
+#if the key is defined ie does it have any value
+if (defined($hash{animal})) {
+print "key defined\n";
+}
+else {
+print "key is not defined\n";
+}
+
+#delete
+
+delete ($hash{fish});
+
+print "@{[%hash]}";
+
+
