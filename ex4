@@ -1,0 +1,43 @@
+#!/usr/bin/perl
+
+print "Content-type: text/html\n\n";
+print "<html><h1>Hello!</h1></html>\n";
+
+
+@array1 = ("one","two","three");
+@array2 = ("four","five","six");
+print "@array1\n";
+print "@array2\n";
+@array3 = (@array1,@array2);
+print "@array3\n";
+
+@reversed = reverse(@array3);
+print "@reversed\n";
+
+@array = (3,9,8,1,2,6);
+@sorted = sort(@array);
+print "@sorted\n";
+
+#comparison operator
+@array = (3,9,8,1,2,6);
+@sorted = sort{$a<=>$b}(@array);
+print "@sorted\n";
+@sorted = sort{$b<=>$a}(@array);
+print "@sorted\n";
+
+#sorting words
+@array = ("orange","green","blue","black","red");
+print "@array\n";
+@sorted = sort(@array);
+print "@sorted\n";
+@sorted = sort{$b cmp $a}(@array);
+print "@sorted\n";
+
+
+
+
+
+
+
+
+
