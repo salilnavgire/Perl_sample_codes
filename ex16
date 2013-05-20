@@ -1,0 +1,34 @@
+ #!/usr/bin/perl
+
+print "Content-type: text/html\n\n";
+print "<html><h1>Hello!</h1></html>\n";
+
+# functions length substring index rindex
+
+$string = "maddy";
+$length = length($string);
+print "$length\n";
+
+$string = "It was hot on thusday";
+$substr = substr($string, 14, 4);
+print "$substr\n";
+
+#replacing a substring
+substr ($string, 14, 8, "tuesday");
+print "$string\n";
+
+#string
+#index function is used to find something
+$string = "There, here and everywhere";
+$index = index($string, "here");
+print "First 'here', position $index\n";
+
+#index is simply ulta of index
+$string = "There, here and everywhere";
+$index = rindex($string, "here");
+print "last 'here', position $index\n";
+
+
+
+
+
