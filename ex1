@@ -1,0 +1,36 @@
+#!/usr/bin/perl
+
+print "Content-type: text/html\n\n";
+
+print "hello world\n";
+
+#$x = 2;
+
+($x,$y) = (1,2);
+
+$z = $x + $y;
+
+print "$z\n";
+
+$number = 2;
+
+$string = "salil";
+
+print "$string\n";
+
+$x = 2;
+$y = 4;
+$z = $x + $y;
+
+print "$z\n";
+
+$lol = "mad";
+
+$word = "$string   $lol";
+
+print "$word\n";
+
+
+
+
+
