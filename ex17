@@ -1,0 +1,24 @@
+#!/usr/bin/perl
+
+print "Content-type: text/html\n\n";
+print "<html><h1>Hello!</h1></html>\n";
+
+#functions split and join
+
+$words = "The Cat is white" ;
+
+#splitting using the function split
+($w1,$w2,$w3,$w4) = split (/ /,$words);
+print "$w1\n";
+print "$w2\n";
+print "$w3\n";
+print "$w4\n";
+print "$words\n";
+
+# join words to strings
+$joined = join(" ", ("A","black","dog"));
+print "$joined\n";
+
+
+
+
