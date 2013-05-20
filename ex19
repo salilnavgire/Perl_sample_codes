@@ -1,0 +1,27 @@
+#!/usr/bin/perl
+
+print "Content-type: text/html\n\n";
+print "<html><h1>Hello!</h1></html>\n";
+
+#creating radom numbers
+$random = rand(100);
+print "$random\n";
+
+$random = int (rand(4));
+print "$random\n";
+
+#select random elements from an array
+@array = qw (hat mat cat rat bat);
+print "$array[$random]\n";
+
+#roundinf using sprintf rounded to 4 numbers
+$random = rand(100);
+print "$random\n";
+$rounded = sprintf "%.4f", $random;
+print "$rounded\n";
+
+
+
+
+
+
