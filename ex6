@@ -1,0 +1,23 @@
+#!/usr/bin/perl
+
+print "Content-type: text/html\n\n";
+print "<html><h1>Hello!</h1></html>\n";
+
+#demonstration of for loop in Perl
+
+@array = qw (red blue greeen purple water jal);
+print "@array\n";
+
+$count = 1;
+foreach $number (@array) {
+print "Color $count : $number\n";
+$count++;
+}
+
+
+@numbers = (1..10);
+
+foreach $number (@numbers) {
+$number = $number + 10;
+print "$number\n";
+}
