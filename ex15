@@ -1,0 +1,52 @@
+#!/usr/bin/perl
+
+print "Content-type: text/html\n\n";
+print "<html><h1>Hello!</h1></html>\n";
+
+
+#Hashes - reverse merge sort
+
+%hash = qw (
+      breakfast cereal
+      lunch diner
+      dessert pie
+);
+
+print "@{[%hash]}\n";
+
+%reversed = reverse %hash;
+
+#reverses the keys and values WTF!!!
+print "@{[%reversed]}\n";
+
+foreach $key (keys %reversed) {
+print "$key - $reversed($key)\n";
+};
+
+#sort by keys or values
+foreach $key (sort keys %hash) {
+print "$key\n";
+};
+
+#lets merge
+%hash2 = qw (
+         drink coffee
+         sugar 1
+         milk yes
+
+);
+
+print "@{[%hash]}\n";
+
+%hash3 = (%hash , %hash2);
+# yes merging is as simple as above
+
+print "@{[%hash3]}\n";
+
+
+
+
+
+
+
+
