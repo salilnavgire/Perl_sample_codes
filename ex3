@@ -1,0 +1,33 @@
+#!/usr/bin/perl
+
+print "Content-type: text/html\n\n";
+print "<html><h1>Hello!</h1></html>\n";
+
+push (@array1, "one");
+push (@array1, "two");
+push (@array1, "three");
+print "@array1\n";
+
+pop (@array1);
+print "@array1\n";
+$variable = pop (@array1);
+print "$variable\n";
+
+# pushing variable to the left
+
+@array = ("one","two","three");
+print "@array\n";
+unshift (@array,"zero");
+print "@array\n";
+shift (@array);
+print "@array\n";
+shift (@array);
+print "@array\n";
+
+
+
+
+
+
+
+
