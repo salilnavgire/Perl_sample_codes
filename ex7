@@ -1,0 +1,24 @@
+#!/usr/bin/perl
+
+print "Content-type: text/html\n\n";
+print "<html><h1>Hello!</h1></html>\n";
+
+#if else unless loops in perl
+
+
+$number  = 10;
+
+if ($number > 10) {
+print "the number is greater than 10\n";}
+elsif ($number < 10) {
+print "the number is less than 10\n";}
+else {
+print "the number is 10\n";}
+
+
+$number = 20;
+
+unless ($number == 20) {
+print "the number is not 20\n";}
+else {
+print "the number is 20\n";}
