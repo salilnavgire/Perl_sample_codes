@@ -1,0 +1,31 @@
+#!/usr/bin/perl
+
+print "Content-type: text/html\n\n";
+print "<html><h1>Hello!</h1></html>\n";
+
+# Functions lc uc lcforst and ucfirst
+
+$words = "NEW ZEALAND";
+$words = lc ($words);
+print "$words\n";
+
+$words = "NEW ZEALAND";
+$words = uc ($words);
+print "$words\n";
+
+#upper case only first letter
+$words = "AUSTRAILIA";
+$words = lcfirst ($words);
+print "$words\n";
+
+$words = "austrailia";
+$words = ucfirst ($words);
+print "$words\n";
+
+$words = "a title of webpage";
+$words = join ' ',
+map {ucfirst lc}split / /, $words;
+print "$words\n"; 
+
+
+
